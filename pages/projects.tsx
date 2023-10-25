@@ -8,13 +8,12 @@ import { useEffect, useState } from "react";
 
 const Projects: NextPage = () => {
   const client = createClient(process.env.NEXT_PUBLIC_URL as string, process.env.NEXT_PUBLIC_KEY as string);
-  const [projects, setProjects] = useState<string[] | null>(null);
+  const [projects, setProjects] = useState<{id: number; projectName: string; taskDescription1: string; taskDescription2: string; taskDescription3: string; githubLink: string; deployedLink: string; previewImageLink: string;}[] | null>(null);
   useEffect(() => {
     const fetchProjects = async () => {
       const result = await client.from("projects").select('*');
       setProjects(result.data);
-      result.data.sort((a, b) => a.id - b.id);
-    }
+      result.data!.sort((a, b) => a.id.localeCompare(b.id));    }
     fetchProjects();
   }, []);
 
@@ -31,7 +30,7 @@ const Projects: NextPage = () => {
       <div>
 
       </div>
-      {projects.map((project) => (
+      {projects && projects.map((project) => (
         <ProjectContainer
           key={project.id}
           projectName={project.projectName}
