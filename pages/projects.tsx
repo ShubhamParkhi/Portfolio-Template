@@ -7,8 +7,8 @@ import { createClient } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 
 const Projects: NextPage = () => {
-  const client = createClient(process.env.NEXT_PUBLIC_URL, process.env.NEXT_PUBLIC_KEY);
-  const [projects, setProjects] = useState([]);
+  const client = createClient(process.env.NEXT_PUBLIC_URL as string, process.env.NEXT_PUBLIC_KEY as string);
+  const [projects, setProjects] = useState<string[] | null>(null);
   useEffect(() => {
     const fetchProjects = async () => {
       const result = await client.from("projects").select('*');
