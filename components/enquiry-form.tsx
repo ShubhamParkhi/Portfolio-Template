@@ -3,12 +3,11 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const EnquiryForm: NextPage = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     
-    // Check if form.current is not null
     if (form.current) {
       emailjs.sendForm('service_317uf8a', 'template_1gfzdci', form.current, 'XTr5WLJHRjlRdrpJC')
         .then((result) => {
