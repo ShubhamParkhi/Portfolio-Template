@@ -30,7 +30,7 @@ const StatwigContainer: NextPage<StatwigContainerType> = ({
               {projectName}
             </h2>
           </div>
-          <Parallax  style={{ transformStyle: 'preserve-3d' }}  glareEnable={true} glareColor="#5de2ff" glareMaxOpacity={0.08} glarePosition="all" tiltMaxAngleX={5} tiltMaxAngleY={5} gyroscope={true} transitionSpeed={1000} className="rounded-sm bg-glass-morphism [backdrop-filter:blur(8px)] flex flex-row items-start justify-start py-[26px] px-[34px] z-[1] text-inherit text-lightsteelblue">
+          <Parallax  style={{ transformStyle: 'preserve-3d' }}  glareEnable={true} glareColor="#5de2ff" glareMaxOpacity={0.08} glarePosition="all" tiltMaxAngleX={5} tiltMaxAngleY={5} gyroscope={true} transitionSpeed={1000} className="rounded-sm bg-glass-morphism [backdrop-filter:blur(8px)] flex flex-row items-start justify-start py-[26px] px-[34px] z-[1] text-inherit text-lightsteelblue border-[2px] border-transparent">
             <div className="flex-1">
               <ul className="m-0 pl-[27px]">
                 <li className="mb-2.5">{taskDescription1}</li>
