@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 const HeroSection: NextPage = () => {
   return (
-    <section className="self-stretch flex flex-col items-center py-[75px] px-[30px] gap-[60px] text-left text-shade1">
+    <section className="self-stretch flex flex-col items-center py-[75px] px-[30px] gap-[60px] text-left text-shade1 sm:py-[50px] sm:gap-[50px]">
       <main className="w-full flex flex-row items-center gap-[24px] max-w-[1100px] text-left text-xl text-shade1">
         <img
           className="h-full flex-1 relative max-w-[165px] overflow-hidden max-h-[223px] object-cover sm:hidden"
@@ -11,7 +11,7 @@ const HeroSection: NextPage = () => {
           loading="lazy"
           src="/image-1@1x.png"
         />
-        <div className="flex-1 flex flex-col items-start justify-center py-[30px] px-0 gap-[16px]">
+        <div className="flex-1 flex flex-col items-start justify-center py-[30px] px-0 sm:py-[0px]">
           <img
             className="w-full relative max-w-[315px] overflow-hidden h-[55px] shrink-0"
             alt=""
@@ -28,7 +28,7 @@ const HeroSection: NextPage = () => {
           </span>
         </div>
       </main>
-      <div className="w-full flex flex-col justify-start gap-[30px] max-w-[1100px] md:gap-[20px] md:gap-[20px] sm:gap-[20px]">
+      <div className="w-full flex flex-col justify-start gap-[30px] max-w-[1100px] md:gap-[20px] sm:gap-[20px]">
         <h1 className="m-0 text-21xl font-medium sm:leading-[50px]">      
       <Typewriter
         onInit={(typewriter) => {
