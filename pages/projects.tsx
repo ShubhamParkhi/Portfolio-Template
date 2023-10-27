@@ -13,7 +13,8 @@ const Projects: NextPage = () => {
     const fetchProjects = async () => {
       const result = await client.from("projects").select('*');
       setProjects(result.data);
-      result.data!.sort((a, b) => a.id.localeCompare(b.id));    }
+      result.data!.sort((a, b) => a.id - b.id);
+    }
     fetchProjects();
   }, []);
 
