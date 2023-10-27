@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Parallax from 'react-parallax-tilt'
 
@@ -7,10 +8,11 @@ const ContactCard: NextPage = () => {
     <section className="self-stretch flex flex-col items-center justify-center py-[75px] px-[30px] text-center text-21xl text-shade1 ">
       <Parallax className="w-full rounded-3xl bg-darkslategray box-border overflow-hidden flex flex-row items-start justify-center max-w-[1100px] border-[1px] border-solid border-shade-3" style={{ transformStyle: 'preserve-3d' }}  glareEnable={true} glareColor="#9b5cff" glareMaxOpacity={0.08} glarePosition="all" tiltMaxAngleX={3} tiltMaxAngleY={3} gyroscope={true} transitionSpeed={1000}>
         <div className=" flex flex-col items-start justify-start">
-          <img
-            className=" w-[258px] h-[245px] object-cover"
+          <Image
             alt=""
             src="/ellipse-left@2x.png"
+            width={258}
+            height={245}
           />
         </div>
         <div className=" flex-1 flex flex-col items-center justify-center py-20 px-0 z-[2] ml-[-235px]">
@@ -38,10 +40,11 @@ const ContactCard: NextPage = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-col items-end justify-end ml-[-235px]">
-          <img
-            className=" w-[253px] h-[241px] object-cover"
+          <Image
             alt=""
             src="/ellipse-right@2x.png"
+            width={253}
+            height={241}
           />
       </div>
       </Parallax>

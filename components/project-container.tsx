@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Parallax from 'react-parallax-tilt'
 
 type StatwigContainerType = {
@@ -52,11 +53,12 @@ const StatwigContainer: NextPage<StatwigContainerType> = ({
             />
           </div>
         </div>
-        <img
+        {previewImage && (<Image
           className="flex-1 rounded-3xs max-w-full overflow-hidden  border-box object-cover z-[0] ml-[-40px]"
           alt=""
           src={previewImage}
         />
+        )}
       </div>
     </section>
   );
