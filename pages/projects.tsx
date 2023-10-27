@@ -8,10 +8,11 @@ import { useEffect, useState } from "react";
 
 const Projects: NextPage = () => {
   const client = createClient(process.env.NEXT_PUBLIC_URL as string, process.env.NEXT_PUBLIC_KEY as string);
+  const supabase = () => client;
   const [projects, setProjects] = useState<{id: number; projectName: string; taskDescription1: string; taskDescription2: string; taskDescription3: string; githubLink: string; deployedLink: string; previewImageLink: string;}[] | null>(null);
   useEffect(() => {
     const fetchProjects = async () => {
-      const result = await client.from("projects").select('*');
+      const result = await supabase.from("projects").select('*');
       setProjects(result.data);
       result.data!.sort((a, b) => a.id - b.id);
     }
