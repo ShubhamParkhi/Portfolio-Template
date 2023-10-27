@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 
 const SocialMediaContainer: NextPage = () => {
   return (
-    <section className="self-stretch flex flex-col items-center justify-start py-[75px] px-[30px] gap-[60px] text-21xl text-shade1">
+    <section className="self-stretch flex flex-col items-center justify-start py-[75px] px-[30px] gap-[60px] text-shade1">
       <div className="w-full flex flex-col items-start justify-start gap-[10px] max-w-[1100px] md:flex-col">
-        <h1 className="m-0 font-medium">
+        <h1 className="m-0 font-medium text-21xl">
           Social Media
         </h1>
         <p className="m-0 text-xl">
@@ -14,7 +14,7 @@ const SocialMediaContainer: NextPage = () => {
           some links to the social media platforms I use most frequently below.
         </p>
       </div>
-      <div className="w-full flex flex-row flex-wrap items-start gap-[40px] max-w-[1100px]">
+      <div className="w-full flex flex-row flex-wrap items-center gap-[40px] max-w-[1100px]">
         <a
           className="[text-decoration:none] w-10 h-10 bg-[url('/instagram@3x.png')] bg-cover bg-no-repeat bg-[top]"
           href="https://www.instagram.com/shxbhamparkhi/"
