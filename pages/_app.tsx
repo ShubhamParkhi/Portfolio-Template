@@ -8,12 +8,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
-        <title>Portfolio</title>
+        <title>Portfolio|Shubham Parkhi</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-      </Head><AnimatedCursor 
+        <meta name="google-site-verification" content="y4cspBWZ4tL7NJduqiPuDcMf-0sRMM3VKgVA8alDeM0" />
+      </Head>
+      <AnimatedCursor 
       innerSize={10}
       outerSize={30}
       color='50, 120, 200'
