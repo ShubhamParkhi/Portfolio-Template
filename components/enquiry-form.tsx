@@ -26,26 +26,26 @@ const EnquiryForm: NextPage = () => {
             Enquiry Form
           </h2>
         </div>
-        <div className="self-stretch flex flex-col items-center justify-start gap-[10px]">
+        <div className="flex flex-col items-center justify-start gap-[10px]">
           <input
-            className="text-xl bg-[transparent] self-stretch rounded box-border h-14 flex flex-col justify-center py-4 px-3 border-[1px] border-solid border-gray-200 text-white  font-poppins"
+            className="w-full text-xl bg-[transparent] rounded box-border h-14 flex flex-col justify-center py-4 px-3 border-[1px] border-solid border-gray-200 text-white font-poppins"
             placeholder="Name"
             type="text"
             name="from_name"
           />
           <input
-            className="text-xl bg-[transparent] self-stretch rounded flex flex-col justify-start py-4 px-3 border-[1px] border-solid border-gray-200 text-white  font-poppins"
+            className="w-full text-xl bg-[transparent] rounded box-border h-14 flex flex-col justify-center py-4 px-3 border-[1px] border-solid border-gray-200 text-white font-poppins"
             placeholder="Email id"
             type="email"
             name="email_id"
           />
           <input
-            className="text-xl bg-[transparent] self-stretch rounded box-border h-[105px] flex flex-col justify-start p-3 border-[1px] border-solid border-gray-200 text-white  font-poppins"
+            className="w-full text-xl bg-[transparent] rounded box-border h-[105px] flex flex-col justify-start p-3 border-[1px] border-solid border-gray-200 text-white font-poppins"
             placeholder="Comments or questions"
             type="text"
             name="message"
           />
-          <button className="py-2.5 px-5 bg-blueviolet rounded-lg border-[1px] border-solid border-shade-3 font-poppins text-xl text-shade1  font-poppins" type="submit">
+          <button className="py-2.5 px-5 bg-blueviolet rounded-lg border-[1px] border-solid border-shade-3 font-poppins text-xl text-shade1 font-poppins" type="submit">
               Submit
           </button>
         </div>
