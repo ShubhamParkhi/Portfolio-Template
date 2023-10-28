@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <meta name="description" content="Shubham Parkhi&#039;s showcase of his projects and some thoughts as a Front-End Developer from Pune, India. A self-taught front-end developer, who loves intuitive clean and modern User Interface (UI) design as well as user experience (UX). He makes meaningful and delightful digital products that create an equilibrium between user needs and business goals." />
+        <meta name="description" content="Shubham Parkhi is a self-taught front-end developer from Pune, India. He creates beautiful and user-friendly UI/UX designs for digital products. Visit his website to see his projects and thoughts." />
         <meta name="google-site-verification" content="y4cspBWZ4tL7NJduqiPuDcMf-0sRMM3VKgVA8alDeM0" />
       </Head>
       <AnimatedCursor 
