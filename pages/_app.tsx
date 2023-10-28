@@ -3,6 +3,7 @@ import Head from "next/head";
 import type { AppProps } from "next/app";
 import "./global.css";
 import AnimatedCursor from "react-animated-cursor"
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         innerScale={0.75}
         outerScale={2} />
       <Component {...pageProps} />
+      <Analytics />
     </Fragment>
   );
 }
