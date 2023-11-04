@@ -33,7 +33,7 @@ const HeroSection: NextPage = () => {
           </span>
         </div>
       </main>
-      <div className="w-full flex flex-col justify-start gap-[30px] max-w-[1100px] md:gap-[20px] md:gap-[20px] sm:gap-[20px]">
+      <div className="w-full flex flex-col justify-start gap-[30px] max-w-[1100px] md:gap-[20px] sm:gap-[20px]">
         <h1 className="m-0 text-21xl font-medium sm:leading-[50px]">      
       <Typewriter
         onInit={(typewriter) => {

@@ -46,7 +46,7 @@ const EnquiryForm: NextPage = () => {
             placeholder="Comments or questions"
             name="message"
           />
-          <button className="py-2.5 px-5 bg-blueviolet rounded-lg border-[1px] border-solid border-shade-3 font-poppins text-xl text-shade1 font-poppins" type="submit">
+          <button className="py-2.5 px-5 bg-blueviolet rounded-lg border-[1px] border-solid border-shade-3 text-xl text-shade1 font-poppins" type="submit">
               Submit
           </button>
         </div>
