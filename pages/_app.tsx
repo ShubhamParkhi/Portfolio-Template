@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#603cba" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="google-site-verification" content="y4cspBWZ4tL7NJduqiPuDcMf-0sRMM3VKgVA8alDeM0" />
+        <meta name="google-site-verification" content="MO4m2koraq0EDP0k12SRXb3ACKc3s6HVkhWspYcNQLo" />
       </Head>
       <AnimatedCursor
         innerSize={10}
