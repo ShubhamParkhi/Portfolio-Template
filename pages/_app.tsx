@@ -8,6 +8,7 @@ import { Analytics } from '@vercel/analytics/react';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
+      <html lang="en" />
       <Head>
         <title>Shubham Parkhi · Web / UI / UX Developer</title>
         <meta
