@@ -41,7 +41,7 @@ const Projects: NextPage = () => {
         sectionTitle="Projects"
         developmentWorkDescription="Showcase of my development related work."
       />
-      <div></div>
+        <Loading height="80vh" width="80vh" />
       {projects === null ? (
         <Loading height="80vh" width="80vh" />
       ) : (
