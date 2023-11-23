@@ -9,7 +9,7 @@ const EnquiryForm: NextPage = () => {
 
   const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-      toast.success('Your message has been sent successfuly!', {
+      toast.success('Your message has been sent successfully!', {
         position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
