@@ -31,7 +31,10 @@ const Projects: NextPage = () => {
       <div>
 
       </div>
-      {projects && projects.map((project) => (
+      {projects === null ? (
+      <div>Loading Please Wait...</div>
+    ) : (
+      projects.map((project) => (
         <ProjectContainer
           key={project.id}
           projectName={project.projectName}
@@ -41,8 +44,9 @@ const Projects: NextPage = () => {
           githubLink={project.githubLink}
           deployedLink={project.deployedLink}
           previewImage={project.previewImageLink}
-        />))}
-      <Footer />
+        />
+      ))
+    )}      <Footer />
     </div>
   );
 };
