@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import NavBar from "../components/nav-bar";
 import HeadingContainer from "../components/heading";
+import Loading from "../components/loading";
 import ProjectContainer from "../components/project-container";
 import Footer from "../components/footer";
 import { createClient } from "@supabase/supabase-js";
@@ -32,7 +33,7 @@ const Projects: NextPage = () => {
 
       </div>
       {projects === null ? (
-      <div>Loading Please Wait...</div>
+      <Loading height='80vh' width="80vh" />
     ) : (
       projects.map((project) => (
         <ProjectContainer
