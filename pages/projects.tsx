@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import NavBar from "../components/nav-bar";
 import HeadingContainer from "../components/heading";
-import Loading from "../components/loading";
 import ProjectContainer from "../components/project-container";
 import Footer from "../components/footer";
 import { createClient } from "@supabase/supabase-js";
@@ -25,6 +24,7 @@ const Projects: NextPage = () => {
       }[]
     | null
   >(null);
+  
   useEffect(() => {
     const fetchProjects = async () => {
       const result = await client.from("projects").select("*");
@@ -41,9 +41,8 @@ const Projects: NextPage = () => {
         sectionTitle="Projects"
         developmentWorkDescription="Showcase of my development related work."
       />
-        <Loading height="80vh" width="80vh" />
       {projects === null ? (
-        <Loading height="80vh" width="80vh" />
+        <div>Loading Please wait..</div>
       ) : (
         projects.map((project) => (
           <ProjectContainer
