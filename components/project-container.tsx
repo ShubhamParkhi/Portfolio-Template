@@ -57,6 +57,7 @@ const StatwigContainer: NextPage<StatwigContainerType> = ({
           className="flex-1 rounded-3xs max-w-full overflow-hidden border-box object-cover z-[0] ml-[-40px]"
           alt=""
           src={previewImage}
+          draggable="false"
         />
         )}
       </div>
