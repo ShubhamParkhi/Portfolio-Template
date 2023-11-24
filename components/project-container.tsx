@@ -23,7 +23,7 @@ const StatwigContainer: NextPage<StatwigContainerType> = ({
 }) => {
   return (
     <section className="self-stretch flex flex-col items-center justify-center py-[50px] px-[30px] text-left text-xl text-mediumorchid">
-      <div className="w-full flex flex-row flex-wrap items-center justify-center max-w-[1100px] lg:gap-[-40px] lg:items-end md:flex-col sm:gap-[40px] md:gap-[40px] md:items-end">
+      <div className="w-full flex flex-row flex-wrap items-center justify-center max-w-[1100px] lg:gap-[-35px] lg:items-end md:flex-col sm:gap-[40px] md:gap-[40px] md:items-end">
         <div className="flex-1 flex flex-col items-start justify-center gap-[34px] z-[1]">
           <div className="flex flex-col items-start justify-start z-[2]">
             <div>Featured Project</div>
