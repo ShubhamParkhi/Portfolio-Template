@@ -30,6 +30,7 @@ const Projects: NextPage = () => {
       const result = await client.from("projects").select("*");
       setProjects(result.data);
       result.data!.sort((a, b) => a.id - b.id);
+      console.log(projects);
     };
     fetchProjects();
   }, []);
