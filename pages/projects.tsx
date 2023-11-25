@@ -24,10 +24,9 @@ const Projects: NextPage = () => {
       }[]
     | null
   >(null);
-
   const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
+  useEffect(() => {
     const fetchProjects = async () => {
       setIsLoading(true);
       const result = await client.from("projects").select("*");
@@ -37,7 +36,7 @@ const Projects: NextPage = () => {
     };
     fetchProjects();
   }, []);
-
+  
   return (
     <div className="[text-decoration:none] bg-gray-100 w-full flex flex-col items-start justify-start font-poppins">
       <NavBar projectsColor="#7127ba" contactColor="#fff" />
@@ -46,9 +45,11 @@ const Projects: NextPage = () => {
         developmentWorkDescription="Showcase of my development related work."
       />
       {isLoading ? (
-        <div>Loading Please wait..</div>
+        <div>Loading...</div>
+      ) : projects === null ? (
+        <div>Error loading projects</div>
       ) : (
-        projects?.map((project) => (
+        projects.map((project) => (
           <ProjectContainer
             key={project.id}
             projectName={project.projectName}
