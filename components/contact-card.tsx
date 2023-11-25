@@ -11,8 +11,9 @@ const ContactCard: NextPage = () => {
           <Image
             alt=""
             src="/ellipse-left@2x.png"
-            width={258}
-            height={245}
+            width={250}
+            height={250}
+            draggable="false"
           />
         </div>
         <div className=" flex-1 flex flex-col items-center justify-center py-20 px-0 z-[2] ml-[-235px]">
@@ -43,8 +44,9 @@ const ContactCard: NextPage = () => {
           <Image
             alt=""
             src="/ellipse-right@2x.png"
-            width={253}
-            height={241}
+            width={250}
+            height={250}
+            draggable="false"
           />
       </div>
       </Parallax>

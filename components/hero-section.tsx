@@ -13,6 +13,7 @@ const HeroSection: NextPage = () => {
           src="/image-1@1x.png"
           width={165}
           height={223}
+          draggable="false"
         />
         <div className="flex-1 flex flex-col items-start justify-center py-[30px] px-0 gap-[16px]">
           <Image
@@ -21,6 +22,7 @@ const HeroSection: NextPage = () => {
             src="/vector.svg"
             width={315}
             height={55}
+            draggable="false"
           />
           <span>A Designer who</span>
           <h1 className="m-0 text-29xl leading-[110%] font-medium">
@@ -74,6 +76,7 @@ const HeroSection: NextPage = () => {
             src="/vector1.svg"
             width={30}
             height={18.7}
+            draggable="false"
           />
         </div>
         <div className="rounded-2xl bg-custom-level-2-background-cards shadow-[0px_0px_100px_rgba(155,_92,_255,_0.5)] w-[60px] h-[60px] flex flex-row items-center justify-center box-border">
@@ -82,6 +85,7 @@ const HeroSection: NextPage = () => {
             src="/vector2.svg"
             width={30}
             height={30}
+            draggable="false"
           />
         </div>
         <div className="rounded-2xl bg-custom-level-2-background-cards shadow-[0px_0px_100px_rgba(155,_92,_255,_0.5)] w-[60px] h-[60px] flex flex-row items-center justify-center box-border">
@@ -90,6 +94,7 @@ const HeroSection: NextPage = () => {
             src="/vector3@2x.png"
             width={30}
             height={30}
+            draggable="false"
           />
         </div>
         <div className="rounded-2xl bg-custom-level-2-background-cards shadow-[0px_0px_100px_rgba(155,_92,_255,_0.5)] w-[60px] h-[60px] flex flex-row items-center justify-center box-border">
@@ -98,6 +103,7 @@ const HeroSection: NextPage = () => {
             src="/vector4.svg"
             width={30}
             height={18}
+            draggable="false"
           />
         </div>
         <div className="rounded-2xl bg-custom-level-2-background-cards shadow-[0px_0px_100px_rgba(155,_92,_255,_0.5)] w-[60px] h-[60px] flex flex-row items-center justify-center box-border">
@@ -106,6 +112,7 @@ const HeroSection: NextPage = () => {
             src="/vector5.svg"
             width={19.3}
             height={30}
+            draggable="false"
           />
         </div>
         <div className="rounded-2xl bg-custom-level-2-background-cards shadow-[0px_0px_100px_rgba(155,_92,_255,_0.5)] w-[60px] h-[60px] flex flex-row items-center justify-center box-border">
@@ -114,6 +121,7 @@ const HeroSection: NextPage = () => {
             src="/vector6@2x.png"
             width={30}
             height={30}
+            draggable="false"
           />
         </div>
         <div className="rounded-2xl bg-custom-level-2-background-cards shadow-[0px_0px_100px_rgba(155,_92,_255,_0.5)] w-[60px] h-[60px] flex flex-row items-center justify-center box-border">
@@ -122,6 +130,7 @@ const HeroSection: NextPage = () => {
             src="/vector7.svg"
             width={30}
             height={30}
+            draggable="false"
           />
         </div>
       </div>

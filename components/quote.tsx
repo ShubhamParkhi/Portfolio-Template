@@ -11,6 +11,7 @@ const Quote: NextPage = () => {
         src="/vector8.svg"
         width={550} 
         height={133}
+        draggable="false"
       />
     </section>
   );
