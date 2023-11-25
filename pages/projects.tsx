@@ -45,9 +45,9 @@ const Projects: NextPage = () => {
         developmentWorkDescription="Showcase of my development related work."
       />
       {isLoading ? (
-        <div className="h-[1000px]">Loading...</div>
+        <div className="self-stretch flex flex-1 flex-row items-center py-[25px] px-2 text-center text-xl text-shade-2 h-[1000px]">Loading...</div>
       ) : projects === null ? (
-        <div className="h-[1000px]">Error loading projects</div>
+        <div className="self-stretch flex flex-1 flex-row items-center py-[25px] px-2 text-center text-xl text-shade-2 h-[1000px]">Error loading projects</div>
       ) : (
         projects.map((project) => (
           <ProjectContainer
