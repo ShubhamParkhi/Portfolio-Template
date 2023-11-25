@@ -24,12 +24,16 @@ const Projects: NextPage = () => {
       }[]
     | null
   >(null);
-  
-  useEffect(() => {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
     const fetchProjects = async () => {
+      setIsLoading(true);
       const result = await client.from("projects").select("*");
       setProjects(result.data);
       result.data!.sort((a, b) => b.id - a.id);
+      setIsLoading(false);
     };
     fetchProjects();
   }, []);
@@ -41,10 +45,10 @@ const Projects: NextPage = () => {
         sectionTitle="Projects"
         developmentWorkDescription="Showcase of my development related work."
       />
-      {projects === null ? (
+      {isLoading ? (
         <div>Loading Please wait..</div>
       ) : (
-        projects.map((project) => (
+        projects?.map((project) => (
           <ProjectContainer
             key={project.id}
             projectName={project.projectName}
