@@ -38,7 +38,7 @@ const Projects: NextPage = () => {
   }, []);
   
   return (
-    <div className="[text-decoration:none] bg-gray-100 w-full flex flex-col items-start justify-start font-poppins">
+    <div className="[text-decoration:none] bg-gray-100 min-h-screen w-full flex flex-col items-start justify-start font-poppins">
       <NavBar projectsColor="#7127ba" contactColor="#fff" />
       <HeadingContainer
         sectionTitle="Projects"
